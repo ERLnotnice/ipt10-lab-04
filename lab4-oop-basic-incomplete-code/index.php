@@ -8,8 +8,11 @@ $profile = new Profile(
     "Dipasisiil"
 );
 
+
 $profile->setEmail('juan@delacruz.ph');
 $profile->setAddress('Barangay Mintal, Davao City, Philippines 8000');
+$profile->setcontact_number('09171234567');
+$profile->setFavoriteQuote('"Don’t let what you cannot do interfere with what you can do." -John Wooden');
 
 ?>
 <!DOCTYPE html>
@@ -23,6 +26,7 @@ $profile->setAddress('Barangay Mintal, Davao City, Philippines 8000');
     <h1><?php echo $profile->getCompleteName(); ?></h1>
     <h2><?php echo $profile->getEmail();?></h2>
     <h2><?php echo $profile->getAddress();?></h2>
+    <h2><?php echo $profile->getContactNumber();?></h2>
     <p>
         <?php echo $profile->getFavoriteQuote(); ?>
     </p>
